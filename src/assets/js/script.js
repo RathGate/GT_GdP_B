@@ -12,13 +12,16 @@ if (document.querySelector("aside") && document.querySelector(".menu")) {
     })
 }
 
-document.querySelectorAll(".sub").forEach(element => {
-    if (element.querySelector(".subtitle-container")) {
-        element.addEventListener("mouseover", function() {
-            element.querySelector(".subtitle-container").classList.add("visible")
-        })
-        element.addEventListener("mouseout", function() {
-            element.querySelector(".subtitle-container").classList.remove("visible")
-        })
-    }
-})
+function subMouseListener() {
+    document.querySelectorAll(".sub").forEach(element => {
+        if (element.querySelector(".subtitle-container")) {
+            element.addEventListener("mouseover", function() {
+                element.querySelector(".subtitle-container").classList.add("visible")
+            })
+            element.addEventListener("mouseout", function() {
+                element.querySelector(".subtitle-container").classList.remove("visible")
+            })
+        }
+    })
+}
+subMouseListener()
