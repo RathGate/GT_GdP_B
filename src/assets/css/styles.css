@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "Dharma Gothic I";
+    src: url(../fonts/DharmaGothicE_ExBold_R.otf);
+}
+
+:root {
+    --color-light-green: #42e19b;
+    --color-dark-blue: hsl(202, 43%, 12%);
+    --color-darker-blue: #0e1b22;
+}
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--color-dark-blue);
+    color: white;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    position: fixed;
+    z-index: 5;
+    background-color: var(--color-dark-blue);
+}
+nav {
+    height: 100%;
+    padding: 20px 23px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    justify-content: space-between;
+}
+.logo {
+    height: 100%;
+    max-height: 90px;
+    cursor: pointer;
+}
+.nav-right {
+    display: flex;
+}
+svg {
+    height: 100%;
+}
+svg path {
+    transition: .2s ease
+}
+svg:hover path{
+    fill: var(--color-light-green);
+}
+.big-btn {
+    cursor: pointer;
+    height: 50px;
+    padding: 0 50px;
+    width: fit-content;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.big-btn:before {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    content: "";
+    top: 0;
+    transform: translateX(-100%);
+    transition: .3s ease-out;
+    z-index: -1;
+}
+.big-btn:hover:before {
+    transform: translateX(0);
+}
+.big-btn:hover {
+    color: var(--color-dark-blue);
+    font-weight: bold;
+}
+.burger-icon:before{
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -1px;
+}
+.burger-icon:after{
+    border: 1px solid white;
+    height: 100%;
+    width: 80%;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -1px;
+    transition: .3s ease;
+}
+.menu:hover .burger-icon::after {
+    width: 100%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.menu span {
+    margin-left: 30px;
+}
+.burger-icon {
+    width: 28px;
+    border: 1px solid white;
+    height: 0;
+    position: relative;
+}
+
+section.hero-section {
+    width: 100%;
+    height: 100vh;
+    padding-top: 130px;
+    position: relative;
+    max-width: 100vw;
+}
+
+.bg-decoration {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.bg-decoration::before {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background-color: var(--color-darker-blue);
+    transform: rotate(-8deg);
+}
+
+.right-decoration {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 33%;
+    max-width: 90%;
+}
+.left-decoration {
+    position: absolute;
+    width: 600px;
+    left: 0;
+    bottom: -12%;
+    max-width: 90%;
+}
+.test-section {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Dharma Gothic I", sans-serif;
+    font-size: 82px;
+    letter-spacing: 1px;
+    line-height: 1.05;
+    margin: 0 0 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.light-green {
+    color: var(--color-light-green);
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero-video {
+    position: absolute;
+    z-index: 3;
+    width: 770px;
+    max-width: 100%;
+    height: fit-content;
+    left: 40%;
+    bottom: -15%;
+    cursor: pointer;
+}
+.hero-video img {
+    display: block;
+    width: 100%;
+}
+.hero-video:after {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: var(--color-dark-blue);
+    position: absolute;
+    opacity: 0.25;
+    transition: .2s ease;
+}
+.hero-video:hover::after {
+    opacity: 0;
+}
