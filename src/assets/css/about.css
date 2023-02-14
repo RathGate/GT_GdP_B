@@ -21,10 +21,6 @@
 }
 .lien{
     text-decoration: none;
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 17%;
-    width: 22%;
 }
 
 
@@ -315,13 +311,9 @@
 .numero_un{
     font-size: 350%;
     font-family: "Dharma Gothic I";
-    position: absolute;
-    z-index: 54;
-    margin-left: 10%;
-    margin-top: 10%;
     border-bottom: 1px solid black;
     width: 350px;
-    
+    margin-bottom: 15px;
 }
 
 .numero_deux{
@@ -361,4 +353,20 @@
     color: black;
     font-family: "Dharma Gothic I";
     font-size: 60px;
+    line-height: 1.05;
+    font-weight: 300;
+    padding: 30px 10px;
+    /* margin-bottom: 40px;*/
+}
+
+.title-container {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%)
+}
+
+.news-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 0 30px;
+    gap: 30px;
 }
