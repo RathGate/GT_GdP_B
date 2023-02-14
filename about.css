@@ -1,0 +1,357 @@
+@font-face {
+	font-family: 'Dharma';
+	src: url('DharmaGothicE_ExBold_R.otf')
+}
+.fond_about{
+    float: right;
+    margin-top: 7%;
+    background-color: #EFF2FD;
+    color: #DADEED;
+    margin-left: 6%;
+    position: absolute;
+    width: 93%;
+
+}
+
+.lien:hover .img1{
+    color: #12d097;
+    transform: scale(.8);
+    opacity: .7;
+}
+
+.lien:hover .titre_1{
+    color: black;
+}
+.lien{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 17%;
+    width: 22%;
+}
+
+
+
+.img1{
+    width: 350px;
+    height: 350px;
+}
+.lien .img1{
+    transition: transform .3s,opacity .3s;
+    z-index: 1;
+}
+
+
+
+.lien .titre_2{
+    z-index: 5054005;
+    font-family: 'Dharma';
+    font-style: italic;
+    font-size: 58px;
+    margin: 10px;
+    
+    
+}
+
+.lien .titre_1{
+    width: 292px;
+    z-index: 50000000;
+    height: 190px;
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-left: 4px solid #12d097;
+}
+
+.lien .titre_1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: -500;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #12d097;
+    transition: all .35s;
+}
+.lien .titre_1:hover:after{
+    width: 100%;
+}
+.lien:hover .titre_1{
+    width: 292px;
+    z-index: 50000000;
+    height: 190px;
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-left: 4px solid #12d097;
+}
+.lien:hover.titre_1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: -500;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #12d097;
+    transition: all .35s;
+}
+.lien:hover .titre_1:hover:after{
+    width: 100%;
+}
+
+/**/
+
+.lien2:hover .img2{
+    color: #12d097;
+    transform: scale(.8);
+    opacity: .7;
+}
+
+.lien2:hover .titre_1{
+    color: black;
+}
+.lien2{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 36.8%;
+    margin-top: 17%;
+    width: 22%;
+}
+
+
+
+.img2{
+    width: 350px;
+    height: 350px;
+}
+.lien2 .img2{
+    transition: transform .3s,opacity .3s;
+    z-index: 1;
+}
+
+
+
+.lien2 .titre_2{
+    z-index: 5054005;
+    font-family: 'Dharma';
+    font-style: italic;
+    font-size: 58px;
+    margin: 10px;
+    
+    
+}
+
+.lien2 .titre_1{
+    width: 292px;
+    z-index: 50000000;
+    height: 190px;
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-left: 4px solid #12d097;
+}
+
+.lien2 .titre_1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: -500;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #12d097;
+    transition: all .35s;
+}
+.lien2 .titre_1:hover:after{
+    width: 100%;
+}
+.lien2:hover .titre_1{
+    width: 292px;
+    z-index: 50000000;
+    height: 190px;
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-left: 4px solid #12d097;
+}
+.lien2:hover.titre_1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: -500;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #12d097;
+    transition: all .35s;
+}
+.lien2:hover .titre_1:hover:after{
+    width: 100%;
+}
+
+/**/
+
+
+.lien3:hover .img3{
+    color: #12d097;
+    transform: scale(.8);
+    opacity: .7;
+}
+
+.lien3:hover .titre_1{
+    color: black;
+}
+.lien3{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 63.5%;
+    margin-top: 17%;
+    width: 22%;
+}
+
+
+
+.img3{
+    width: 350px;
+    height: 350px;
+}
+.lien3 .img3{
+    transition: transform .3s,opacity .3s;
+    z-index: 1;
+}
+
+
+
+.lien3 .titre_2{
+    z-index: 5054005;
+    font-family: 'Dharma';
+    font-style: italic;
+    font-size: 58px;
+    margin: 10px;
+    bottom: 0;
+    height: 50px;
+    
+    
+}
+.lien3 .titre_2{
+    z-index: 5054005;
+    font-family: 'Dharma';
+    font-style: italic;
+    font-size: 58px;
+    height: 50px;
+}
+
+.lien3 .titre_1{
+    width: 292px;
+    z-index: 50000000;
+    height: 190px;
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-left: 4px solid #12d097;
+}
+
+.lien3 .titre_1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: -500;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #12d097;
+    transition: all .35s;
+}
+.lien3 .titre_1:hover:after{
+    width: 100%;
+}
+.lien3:hover .titre_1{
+    width: 292px;
+    z-index: 50000000;
+    height: 190px;
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-left: 4px solid #12d097;
+}
+.lien3:hover.titre_1:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    z-index: -500;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #12d097;
+    transition: all .35s;
+}
+.lien3:hover .titre_1:hover:after{
+    width: 100%;
+}
+
+.more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 700;
+    opacity: 0.2;
+    margin-bottom: 0;
+    font-size: 30%;
+    letter-spacing: 4px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.more:hover{
+    opacity: 1;
+}
+
+
+.numero_un{
+    font-size: 350%;
+    font-family: 'Dharma';
+    position: absolute;
+    z-index: 54;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-bottom: 1px solid black;
+    width: 350px;
+    
+}
+
+.numero_deux{
+    font-size: 350%;
+    font-family: 'Dharma';
+    position: absolute;
+    z-index: 54;
+    margin-left: 36.8%;
+    margin-top: 10%;
+    border-bottom: 1px solid black;
+    width: 350px;
+    
+}
+
+.numero_trois{
+    font-size: 350%;
+    font-family: 'Dharma';
+    position: absolute;
+    z-index: 54;
+    margin-left: 63.4%;
+    margin-top: 10%;
+    border-bottom: 1px solid black;
+    width: 350px;
+    
+}
+
+.oui{
+    z-index: 89;
+    background-color: aqua;
+}
