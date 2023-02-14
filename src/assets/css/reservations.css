@@ -4,10 +4,16 @@
 
 
 
-.body {
+body {
     display: flex;
+    justify-content: center;
     background-image:url('https://cloud-live.ams3.digitaloceanspaces.com/uploads/booking_background_images/271/84b/c/Plume_2_Image%404x-1920x1080-booking_background_image.png') ;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    gap: 40px;
 
 }
 
@@ -47,13 +53,7 @@
     height: 26px;
 }
 
-#middle{
-    
-    width:620px;
-    height: 68em;
-    margin: 0 auto;
-	background-color: #FFFFFF;
-}
+
 #baniere{
     width:620px;
     height: 143px;
@@ -242,54 +242,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
-
-.shoppingCarre {
-    font: 20px Roboto ,sans-serif;
-    position: relative;
-    left: 385%;
-    display: flex;
-    flex-direction: column;
-    height: 320px;
-    width: 280px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.vide {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-
-
-
-.shoppingCarre2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    margin-left: 12px;
-    height: 145px;
-    width: 256px;
-    background-color: #EBECF1;
-    border-radius: 10px;
-}
-
-.cartIcon {
-    font-size: 25px;
-}
-
-.titre {
-    font-weight: bold;
-}
-
-.texteCarre2 {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
 }
 
 .money {
@@ -529,4 +481,121 @@
     position: relative;
     left: 40%;
     
+}
+
+
+
+
+
+.shoppingCarre {
+    font: 20px Roboto ,sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    top: 100px;
+}
+.shoppingCarre span {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 145px;
+    width: 256px;
+    background-color: #EBECF1;
+    border-radius: 10px;
+}
+.shoppingCarre img {
+    margin-top: 10px;
+}
+.shoppingCarre h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.shoppingCarre h2 {
+    font-size: 14px;
+    text-align: center;
+    width: 250px;
+    color: #474c50;
+}
+
+.money{
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.money img {
+    width: 30px;
+    height: 30px;
+}
+
+.shoppingCarre a 
+{
+    font-size: 16px;
+    color: #fff;
+    background-color: #aeb1ba;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoppingCarre a:hover {
+    background-color: #474c50;
+}
+
+.shoppingCarre p {
+    font-size: 14px;
+    color: #474c50;
+    background-color: #EBECF1;
+    text-align: center;
+    width: 280px;
+    height: 50px;
+}
+
+.shopping
+{
+    display: none;
+    position: fixed;
+    width: 580px;
+    height: 40px;
+    background-color: #0BAC00;
+    border-radius: 0 0 10px 10px;
+    display: flex
+}
+
+.shopping img {
+    margin: 10px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.shopping h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    .shoppingCarre {
+       display: none;
+    }
+
+    .shopping {
+        display: fixed;
+    }
+
+
 }
