@@ -328,6 +328,7 @@
     font-size: 60px;
     font-style: italic;
     max-width: 100%;
+    margin-top: 20px;
 }
 .article-title {
     color: black;
@@ -336,7 +337,7 @@
     line-height: 1.05;
     font-weight: 300;
     padding: 30px 10px;
-    /* margin-bottom: 40px;*/
+    margin-bottom: 0;
 }
 
 .title-container {

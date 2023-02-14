@@ -44,7 +44,7 @@ h2{
     margin-top: 0;
     text-transform: uppercase;
 }
-p{
+.inner p{
     color: white;
     display: block;
     margin: 0;
