@@ -26,8 +26,8 @@
 
 
 .img1{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    aspect-ratio: 1;
 }
 .lien .img1{
     transition: transform .3s,opacity .3s;
@@ -37,7 +37,6 @@
 
 
 .lien .titre_2{
-    z-index: 5054005;
     font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
@@ -47,9 +46,7 @@
 }
 
 .lien .titre_1{
-    width: 292px;
-    z-index: 50000000;
-    height: 190px;
+    width: 85%;
     margin-top: -120px;
     background-color: white;
     color: black;
@@ -61,7 +58,6 @@
     position: absolute;
     content: "";
     top: 0;
-    z-index: -500;
     left: 0;
     width: 0;
     height: 100%;
@@ -72,9 +68,6 @@
     width: 100%;
 }
 .lien:hover .titre_1{
-    width: 292px;
-    z-index: 50000000;
-    height: 190px;
     margin-top: -120px;
     background-color: white;
     color: black;
@@ -85,7 +78,6 @@
     position: absolute;
     content: "";
     top: 0;
-    z-index: -500;
     left: 0;
     width: 0;
     height: 100%;
@@ -129,7 +121,6 @@
 
 
 .lien2 .titre_2{
-    z-index: 5054005;
     font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
@@ -140,7 +131,6 @@
 
 .lien2 .titre_1{
     width: 292px;
-    z-index: 50000000;
     height: 190px;
     margin-top: -120px;
     background-color: white;
@@ -153,7 +143,6 @@
     position: absolute;
     content: "";
     top: 0;
-    z-index: -500;
     left: 0;
     width: 0;
     height: 100%;
@@ -165,7 +154,6 @@
 }
 .lien2:hover .titre_1{
     width: 292px;
-    z-index: 50000000;
     height: 190px;
     margin-top: -120px;
     background-color: white;
@@ -177,7 +165,6 @@
     position: absolute;
     content: "";
     top: 0;
-    z-index: -500;
     left: 0;
     width: 0;
     height: 100%;
@@ -222,7 +209,6 @@
 
 
 .lien3 .titre_2{
-    z-index: 5054005;
     font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
@@ -233,7 +219,6 @@
     
 }
 .lien3 .titre_2{
-    z-index: 5054005;
     font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
@@ -242,7 +227,6 @@
 
 .lien3 .titre_1{
     width: 292px;
-    z-index: 50000000;
     height: 190px;
     margin-top: -120px;
     background-color: white;
@@ -255,7 +239,6 @@
     position: absolute;
     content: "";
     top: 0;
-    z-index: -500;
     left: 0;
     width: 0;
     height: 100%;
@@ -267,7 +250,6 @@
 }
 .lien3:hover .titre_1{
     width: 292px;
-    z-index: 50000000;
     height: 190px;
     margin-top: -120px;
     background-color: white;
@@ -279,7 +261,6 @@
     position: absolute;
     content: "";
     top: 0;
-    z-index: -500;
     left: 0;
     width: 0;
     height: 100%;
@@ -312,7 +293,7 @@
     font-size: 350%;
     font-family: "Dharma Gothic I";
     border-bottom: 1px solid black;
-    width: 350px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -320,7 +301,6 @@
     font-size: 350%;
     font-family: "Dharma Gothic I";
     position: absolute;
-    z-index: 54;
     margin-left: 36.8%;
     margin-top: 10%;
     border-bottom: 1px solid black;
@@ -332,7 +312,6 @@
     font-size: 350%;
     font-family: "Dharma Gothic I";
     position: absolute;
-    z-index: 54;
     margin-left: 63.4%;
     margin-top: 10%;
     border-bottom: 1px solid black;
@@ -348,6 +327,7 @@
     color: black;
     font-size: 60px;
     font-style: italic;
+    max-width: 100%;
 }
 .article-title {
     color: black;
@@ -364,9 +344,66 @@
 }
 
 .news-container {
+
     display: flex;
     margin: 0 auto;
     max-width: 1250px;
     padding: 0 30px;
     gap: 30px;
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+    margin-top: 75px;
+}
+
+.news1 {
+    max-width: 385px;
+}
+
+@media screen and (max-width: 1250px) {
+    .news1 {
+        max-width: 275px;
+    }
+    .article-title {
+        font-size: 55px;
+    }
+    .test-section {
+        padding: 50px 0 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .news1 {
+        max-width: 275px;
+    }
+    .black-nb {
+        font-size: 55px;
+    }
+    .news-container {
+        max-width: 730px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+    .news1 {
+        max-width: 314px;
+    }
+    .test-section, .news-container {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .news-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .news1 {
+        max-width: 100%;
+    }
+    .article-title {
+        font-size: 48px;
+    }
+}
+
+.title-container :first-child {
+    position: relative;
+    z-index: 5;
 }
