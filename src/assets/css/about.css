@@ -1,7 +1,4 @@
-@font-face {
-	font-family: 'Dharma';
-	src: url('DharmaGothicE_ExBold_R.otf')
-}
+
 .fond_about{
     float: right;
     margin-top: 7%;
@@ -45,7 +42,7 @@
 
 .lien .titre_2{
     z-index: 5054005;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
     margin: 10px;
@@ -137,7 +134,7 @@
 
 .lien2 .titre_2{
     z-index: 5054005;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
     margin: 10px;
@@ -230,7 +227,7 @@
 
 .lien3 .titre_2{
     z-index: 5054005;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
     margin: 10px;
@@ -241,7 +238,7 @@
 }
 .lien3 .titre_2{
     z-index: 5054005;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     font-style: italic;
     font-size: 58px;
     height: 50px;
@@ -317,7 +314,7 @@
 
 .numero_un{
     font-size: 350%;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     position: absolute;
     z-index: 54;
     margin-left: 10%;
@@ -329,7 +326,7 @@
 
 .numero_deux{
     font-size: 350%;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     position: absolute;
     z-index: 54;
     margin-left: 36.8%;
@@ -341,7 +338,7 @@
 
 .numero_trois{
     font-size: 350%;
-    font-family: 'Dharma';
+    font-family: "Dharma Gothic I";
     position: absolute;
     z-index: 54;
     margin-left: 63.4%;
@@ -354,4 +351,14 @@
 .oui{
     z-index: 89;
     background-color: aqua;
+}
+.black-nb {
+    color: black;
+    font-size: 60px;
+    font-style: italic;
+}
+.article-title {
+    color: black;
+    font-family: "Dharma Gothic I";
+    font-size: 60px;
 }
