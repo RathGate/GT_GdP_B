@@ -544,3 +544,146 @@ a.color-link {
 }
 
 /* NEMO */
+
+.drivers {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 80px;
+    position: relative;
+    --width-max: 1230px
+
+}
+.quote-container {
+    margin: 0 auto;
+    max-width: var(--width-max);
+    background-color: var(--color-dark-blue);
+    padding: 120px 60px 80px;
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.75;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 32%);
+}
+.quote-container::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-dark-blue);
+}
+.quote-decoration {
+    position: absolute;
+    height: 100px;
+    z-index: 2;
+    top: -50px;
+}
+.other-decoration {
+    position: absolute;
+    height: 100px;
+    top: 150px;
+    right: 0;
+}
+.quote-left {
+    width: 66%;
+    padding-right: 50px;
+    border-right: 1px solid white;
+}
+.quote-right {
+    padding-left: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.stars-container {
+    height: 23px;
+    display: block;
+    margin-top: 20px;
+}
+.bold-default {
+    font-weight: 500;
+}
+.stars-container img {
+    max-height: 100%;
+    display: block;
+}
+.drivers h2 {
+    margin: 0 auto;
+    max-width: var(--width-max);
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+    .drivers {
+        --width-max: 900px
+    }
+    .quote-container {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .drivers {
+        --width-max: 650px
+    }
+    .quote-container {
+        font-size: 19px;
+        padding: 100px 30px 65px;
+    }
+    .quote-left {
+        width: 75%;
+    }
+    .quote-right {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .drivers {
+        --width-max: 100%;
+        padding: 60px 30px;
+        padding-right: 0;
+        
+    }
+    .quote-container {
+        flex-direction: column;
+        margin: 0;
+    }
+    .quote-right, .quote-left {
+        padding: 0;
+        width: 100%;
+    }
+    .quote-left {
+        padding-bottom: 20px;
+        border-right: 0px transparent;
+        border-bottom: 1px solid white;
+    }
+    .quote-right {
+        margin-top: 20px;
+    }
+    .other-decoration {
+        height: 75px;
+        top: 138px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .quote-container {
+        font-size: 18px;
+        padding: 65px 20px 65px;
+    }
+    .quote-decoration {
+        height: 50px;
+        top: -27px;
+    }
+    .drivers h2 {
+        margin-bottom: 60px;
+    }
+    .other-decoration {
+        height: 50px;
+        top: 120px;
+    }
+}

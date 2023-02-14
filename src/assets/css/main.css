@@ -80,7 +80,7 @@ p{
     background-position: bottom right;
     display: flex;
 }
-.h3{
+h2{
     color: #00273a;
     font-size: 60px;
     font-family: "Dharma Gothic I"  ,sans-serif;
@@ -222,7 +222,7 @@ p{
 }
 
 @media screen and (max-width: 1250px) {
-    p.h3 {
+    h2 {
         font-size: 55px;
     }
     p.p2 {
@@ -278,7 +278,7 @@ p{
     .inner2-content {
         padding: 0 25px 75px;
     }
-    p.h3 {
+    h2 {
         font-size: 48px;
     }
     .about {
