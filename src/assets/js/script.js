@@ -25,3 +25,7 @@ function subMouseListener() {
     })
 }
 subMouseListener()
+
+window.addEventListener("scroll", function() {
+    this.document.querySelector("nav").style.height = this.window.scrollY == 0 ? '120px' : '90px'
+})
