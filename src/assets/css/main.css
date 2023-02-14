@@ -300,3 +300,6 @@ h2{
 .icon svg {
     max-width: 100%;
 }
+.about-section h2 {
+    color: white;
+}
