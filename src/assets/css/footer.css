@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Dharma';
+    src: url('DharmaGothicE_ExBold_R.otf')
+}
+
+.footer0 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 100%;
+    height: 50em;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    height: 110px;
+    margin-bottom: 30px;
+}
+
+.randomText1 {
+    margin-top: 2em;
+    font-size: 1em;
+    color: white;
+}
+
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre {
+    color: white;
+    font-weight: bold;
+}
+
+.subTitre {
+    width: 100%;
+    border-top: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 2em; */
+    padding-top: 50px;
+    line-height: 2.5;
+}
+
+.subTitre1, .subTitre2 {
+    width: 50%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    padding-top: 125px;
+}
+
+
+.copyright {
+    color: white;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1250px;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+footer {
+    background-color: #0E1B22;
+    position: relative;
+    padding: 70px;
+    padding-bottom: 0;
+}
+.footer1, .footer2 {
+    width: 50%;
+}
+
+footer .contact-info {
+    flex-direction: column;
+    gap: 20px;
+
+}
+.footer-decoration {
+    position: absolute;
+    height: 125px;
+    bottom: 85px;
+    left: 0;
+}
+
+.copyright, .socials {
+    width: 50%;
+}
+.socials {
+    height: 85px;
+    width: 230px;
+    background-color: var(--color-light-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.socials svg {
+    max-height: 100%;
+}
+.socials div {
+    height: 25px;
+    width: 25px;
+}
+
+@media screen and (max-width: 950px) {
+    .footer-container {
+        max-width: 720px;
+    }
+    .banner {
+        max-height: 65px;
+        margin-bottom: 40px;
+    }
+    .contact-info, .subTitre{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 750px) {
+    .top {
+        max-width: 720px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer1, .footer2 {
+        width: 100%;
+    }
+    footer {
+        padding: 40px 0;
+    }
+    /* .banner {
+        max-height: 65px;
+        margin-bottom: 40px;
+    }
+    .contact-info, .subTitre{
+        font-size: 14px;
+    } */
+    .footer-decoration {
+        height:50px;
+        bottom: 135px;
+    }
+    .bottom {
+        padding-top: 50px;
+    }
+}
